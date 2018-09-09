@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+	<title>IOI chat</title>
+	<meta name="description" content="  ">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Google Fonts link -->
+
+    <link href="chat.css" rel="stylesheet">
+
+</head>
+<body onkeyup="if (event.key == 'Enter') submit()">
+    <div class="main">
+        <div id="chatlog" onscroll="on_scroll(event)"></div>
+	<div class="new_msg" onclick="show_bottom()">Unread</div>
+        <div class="sender">
+            <input id="message" type="text" placeholder="Type your message">
+            <button id="send" onclick="submit()"><img src="images/plane.svg"></button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS SCRIPTS SCRIPTS -->
+
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <script type="text/javascript" src="chat.js"></script>
+
+</body>
+</html>
