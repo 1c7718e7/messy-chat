@@ -1,5 +1,6 @@
 .*
 !.gitignore
 
+/gen/*
 /__pycache__/*
 messages.json

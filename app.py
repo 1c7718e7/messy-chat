@@ -88,7 +88,7 @@ async def handle_default(r):
 	"""Serve a static file"""
 	if '../' in r.url.path:
 		raise ValueError('../ in url')
-	await serve_file(r, 'static/'+r.url.path)
+	await serve_file(r, 'gen/'+r.url.path)
 
 async def handle_login(r):
 	user = r.params.get('login', '')
@@ -118,7 +118,7 @@ async def handle_index(r):
 async def handle_chat(r):
 	if not check_cookie(r):
 		return
-	await serve_file(r, 'static/chat.html')
+	await serve_file(r, 'gen/chat.html')
 
 def db_load():
 	a = []
