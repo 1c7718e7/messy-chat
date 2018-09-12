@@ -71,7 +71,7 @@ async def handle_tcp(reader, writer):
 
 argp = argparse.ArgumentParser()
 argp.add_argument('--bind', default='0.0.0.0', help='Address to bind to')
-argp.add_argument('--port', type=int, default=8000, help='Port to bind to')
+argp.add_argument('--port', type=int, default=80, help='Port to bind to')
 args = argp.parse_args()
 
 loop = asyncio.get_event_loop()

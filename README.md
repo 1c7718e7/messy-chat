@@ -17,23 +17,21 @@ In a terminal, run `python3 server.py` from the root folder to start the server.
 1. Use Messy via some WiFi network
 2. Use Messy via your own WiFi hotspot
 
-By default the server listens on port 8000, if you wish to use another one then use the `--port ...` option. Port 80 is the indended port for HTTP, but listening on it usually requires special priviledges.
-
 ### WiFi Network
 
 If you have at your disposal a WiFi network that does not prohibit its IPs from sending direct messages to each other, you can use it to run Messy as follows:
 
 1. Find your device's IP address given to it by the WiFi router
 2. Share it will all of your friends
-3. To make it work, they will have to be connected to the same WiFi and type your IP + `:8000` in an address bar in their browser
+3. To make it work, they will have to be connected to the same WiFi and type your IP + `:80` in an address bar in their browser
 
 Example:
 
 ```txt
-192.168.0.5:8000/
+192.168.0.5:80/
 
 Here, 192.168.0.5 is your IP address on the network.
-Just add :8000 to it and you are good to go.
+Just add :80 to it and you are good to go.
 ```
 
 ### WiFi Hotspot
@@ -45,7 +43,7 @@ With QPython you can run Python scripts as though it was your PC. As soon as you
 1. Tell your friends to connect to your WiFi hotspot
 2. Find your device's IP
 3. Share it with your friends
-4. To make it work, they will have to type your IP + `:8000` in an address bar in their browser
+4. To make it work, they will have to type your IP + `:80` in an address bar in their browser
 
 ## Dependencies
 
