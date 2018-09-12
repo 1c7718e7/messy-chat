@@ -69,5 +69,22 @@ function poll_server() {
 	xr.send()
 }
 poll_server();
+
+function scale() {
+	var winWidth = $(window).width();
+	var back = $(".main");
+	var isVertical = back.css("background-image") == 'url("http://192.168.0.5/images/background-v.png")';
+	if (winWidth > 600 && isVertical) {
+		back.css("background-image", "url(/images/background-h.png");
+	}
+	else if (winWidth <= 600 && !isVertical) {
+		back.css("background-image", "url(/images/background-v.png");
+	}
+} scale();
+
+$(window).resize(function() {
+	scale();
+});
+
 });
 
